@@ -1,0 +1,101 @@
+.projectBar {
+    position: absolute;
+    bottom: 5px;
+    padding: 0;
+    width: 100%;
+    max-width: 100%;
+
+    /* counter balance margin and padding in pb-frame */
+    margin-right: -10px;
+    margin-left: -10px;
+}
+.pb-frame {
+    max-width: 95%;
+    display: table;
+    margin: 0 auto 5px auto;
+
+    padding: 5px;
+    border-radius: 10px;
+
+    -webkit-box-shadow: 10px 10px 34px 0 rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 34px 0 rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 34px 0 rgba(0,0,0,0.75);
+
+    font-weight: bold;
+    color: goldenrod;
+    background-color:black;
+    z-index:0;
+    opacity:0.7;
+}
+.pb-components {
+
+}
+.pb-left {
+    display: inline-flex;
+}
+.pb-right {
+    display: inline;
+}
+.pb-dl-left {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+.pb-dl-left dt {
+    float: left;
+    clear: left;
+    text-align: right;
+
+}
+.pb-dl-left dd {
+    margin: 0 10px 0 90px;
+    //float: left;
+}
+.pb-dl-left dd a {
+    color: #337AB7;
+    font-weight: bold;
+    text-decoration: none;
+}
+.pb-ul-inline-right {
+    margin: 5px;
+    padding: 0;
+    list-style-type: none;
+    float: right;
+    display: inline;
+}
+.pb-ul-inline-right li {
+    display: inline;
+    float: right;
+    padding-left: 5px;
+}
+.pb-ul-inline-right li a i {
+    color: grey;
+}
+.pb-img {
+    max-width: 32px;
+    max-height: 32px;
+}
+.pb-img-round {
+    border-radius: 90px;
+}
+
+@media all and (max-width: 1024px) {
+    .pb-frame {
+        height: 75px;
+    }
+    .pb-left {
+        display: inherit;
+    }
+    .pb-i {
+        font-size: 5em;
+    }
+    .pb-img {
+        width: 80px;
+        height: 80px;
+        max-width: 80px;
+        max-height: 80px;
+    }
+    .pb-left {
+        font-size: 2em;
+    }
+}
